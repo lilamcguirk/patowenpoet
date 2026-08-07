@@ -10,25 +10,41 @@ const NAV_LINKS = [
 
 export default function Header() {
   return (
-    <header className="site-header">
-      <nav className="site-nav">
-        <ul>
+    <header className="hero">
+    <img className="hero-photo" src="/images/header.jpeg" alt="Pat Owen" />
+    <div className="hero-overlay" />
+    
+      <nav className="hero-nav">
+        <div className="brand">
+          <h1>Pat Owen</h1>
+          <p>Poet</p>
+        </div>
+
+        <ul className="nav-links">
           {NAV_LINKS.map((link) => (
             <li key={link.href}>
               <a href={link.href}>{link.label}</a>
             </li>
           ))}
         </ul>
+
+        <a className="contact-btn" href="/contact">Contact</a>
       </nav>
 
-      <div className="header-content">
-        <img
-          className="header-photo"
-          src="./images/header.jpeg"
-          alt="Pat Owen"
-        />
-        <h1 className="header-name">Pat Owen</h1>
-        <p className="header-subtitle">Poet</p>
+      <div className="hero-content">
+        <blockquote>
+          "A successful poem changes the reader. At the end of a poem, the reader is wiser, more compassionate."
+          <span className="quote-author">Quote Author</span>
+        </blockquote>
+
+        <p className="hero-desc">
+          Published poet Pat Williams Owen is the author of four poetry collections. Her work focuses on memory, family, grief, love and everyday life. She transitioned from a career in legal publishing to writing poetry.
+        </p>
+
+        <div className="cta-group">
+          <a className="cta-btn" href="/readings">Poetry Readings &gt;</a>
+          <a className="cta-btn" href="/events">Literary Events &gt;</a>
+        </div>
       </div>
     </header>
   );
