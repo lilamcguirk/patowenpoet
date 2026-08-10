@@ -11,9 +11,12 @@ const NAV_LINKS = [
 export default function Header() {
   return (
     <header className="hero">
-    <img className="hero-photo" src="/images/header.jpeg" alt="Pat Owen" />
+      <div className="hero-photo-wrap">
+        <img className="hero-photo" src="/images/header.jpeg" alt="Pat Owen" />
+        <div className="hero-photo-fade" />
+      </div>
+
     <div className="hero-overlay" />
-    
       <nav className="hero-nav">
         <div className="brand">
           <h1>Pat Owen</h1>
@@ -33,8 +36,7 @@ export default function Header() {
 
       <div className="hero-content">
         <blockquote>
-          "A successful poem changes the reader. At the end of a poem, the reader is wiser, more compassionate."
-          <span className="quote-author">Quote Author</span>
+          A successful poem changes the reader. At the end of a poem, the reader is wiser, more compassionate.
         </blockquote>
 
         <p className="hero-desc">
