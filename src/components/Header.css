@@ -4,22 +4,40 @@ body
     min-height: 100vh;
 }
 
-.hero 
-{
-    position: relative;
-    height: 800px;
-    overflow: hidden;
-    font-family: 'Inter', sans-serif;
-    background-color: rgb(8, 20, 58);
+:root {
+    --photo-width: 780px;
+    --fade-width: 380px; /* was 240px — more distance to ease out over */
 }
-  
+
 .hero-photo-wrap 
 {
     position: absolute;
     right: 0;
     top: 0;
     height: 100%;
-    width: 750px;
+    width: var(--photo-width);
+}
+
+.hero 
+{
+    position: relative;
+    height: 800px;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+    background: rgb(16, 34, 82);
+}
+
+.hero-photo-fade 
+{
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to right,
+      rgb(6, 14, 42) 0%,
+      rgb(10, 24, 64) calc(100% - var(--photo-width) - 350px),
+      rgb(16, 34, 82) calc(100% - var(--photo-width)),
+      rgba(16, 34, 82, 0) calc(100% - var(--photo-width) + var(--fade-width))
+    );
 }
   
 .hero-photo 
@@ -27,23 +45,9 @@ body
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 100% 65%;
+    object-position: 100% 55%;
     filter: sepia(20%) saturate(120%) brightness(1.02);
     display: block;
-}
-  
-.hero-photo-fade 
-{
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-      to right,
-      rgb(8, 20, 58) 0px,
-      rgba(8, 20, 58, 0.95) 40px,
-      rgba(8, 20, 58, 0.8) 90px,
-      rgba(8, 20, 58, 0.55) 150px,
-      transparent 200px
-    );
 }
   
 .hero-overlay 
@@ -52,11 +56,11 @@ body
     inset: 0;
     background: linear-gradient(
       135deg,
-      rgba(255, 165, 90, 0.14) 0%,
-      rgba(255, 140, 70, 0.06) 45%,
-      transparent 80%
+      rgba(255, 195, 110, 0.16) 0%,
+      rgba(255, 175, 90, 0.1) 40%,
+      rgba(255, 165, 80, 0.05) 70%,
+      rgba(255, 165, 80, 0.02) 100%
     );
-    mix-blend-mode: overlay;
     pointer-events: none;
     z-index: 1;
 }
@@ -75,7 +79,7 @@ body
     flex-wrap: wrap;
     justify-content: center;
     justify-content: space-between;
-    padding: 40px 90px 0 90px;
+    padding: 40px 100px 0 100px;
 }
   
 .brand h1 
@@ -131,17 +135,18 @@ body
 {
     background: #fff;
     color: #0d1b3d;
-    font-weight: 600;
+    font-weight: 700;
     padding: 0.75rem 2rem;
     border-radius: 999px;
     text-decoration: none;
     white-space: nowrap;
+    font-family: 'Oswald', serif;
 }
   
 .hero-content 
 {
     max-width: 650px;
-    padding: 7rem 5rem 5rem;
+    padding: 8rem 5rem 5rem;
 }
   
 .hero-content blockquote 
