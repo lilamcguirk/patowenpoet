@@ -5,8 +5,8 @@ body
 }
 
 :root {
-    --photo-width: 780px;
-    --fade-width: 380px; /* was 240px — more distance to ease out over */
+    --photo-width: 800px;
+    --fade-width: 380px;
 }
 
 .hero-photo-wrap 
@@ -21,7 +21,7 @@ body
 .hero 
 {
     position: relative;
-    height: 800px;
+    height: 820px;
     overflow: hidden;
     font-family: 'Inter', sans-serif;
     background: rgb(16, 34, 82);

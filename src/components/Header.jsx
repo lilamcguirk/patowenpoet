@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <header className="hero">
       <div className="hero-photo-wrap">
-        <img className="hero-photo" src="/images/header-4.jpeg" alt="Pat Owen" />
+        <img className="hero-photo" src="/images/header-6.png" alt="Pat Owen" />
         <div className="hero-photo-fade" />
       </div>
 
