@@ -1,0 +1,18 @@
+const journalPubs = [
+  '“Going to See the Buddha,” Louisville Review 2010',
+  '“Seeing Anew,” Gulf Shore Literary Magazine 2015',
+  '“Hawks.” Sheila-Na-Gig 2021',
+  '“I Try to Remember Her a Toddler,” Louisville Review 2022',
+  '“The Crossroad,” “Midsummer,” “Returning to Kentucky in Late April,” Hong Kong Review Vol IV, No 1',
+  '“It Becomes Part of Us,” The Raven’s Perch 2022',
+  '“Change the Sheets,” Halcyon 2022',
+  '“Sapiens,” Highland Park Poetry 2022',
+  '“Polishing my Shoes,” Louisville Review 2025',
+  '“Autistic Kid at the Gym,” “At the Natural History Museum,” Can you See at Last,” California Quarterly 2026',
+  '“Breasts,” Raven’s Review 2026',
+];
+
+const awards = [
+    '“1974 Sanibel Island,” Atlanta Review Poetry Contest winner 2024',
+    '“Our First Apartment,” Steve Kowitt Prize, 2nd Runner Up, San Diego Arts Guild, 2025',
+  ];

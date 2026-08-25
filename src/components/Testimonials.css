@@ -1,0 +1,133 @@
+.testimonials {
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.testimonial-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 24px 40px rgba(0, 0, 0, 0.28);
+}
+
+.testimonial-quote {
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4a5568;
+    margin: 0 0 1.25rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.testimonial-readmore {
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 15px;
+    color: #1c1e54;
+    cursor: pointer;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.testimonial-readmore:hover {
+    text-decoration: underline;
+}
+
+.testimonial-attribution {
+    margin-top: auto;
+}
+
+.testimonial-name {
+    font-weight: 700;
+    font-size: 16px;
+    color: #1a1a2e;
+    margin: 0;
+}
+
+.testimonial-role {
+    font-size: 14px;
+    color: #8a8fa3;
+    margin: 0.25rem 0 0;
+}
+
+.testimonial-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(20, 22, 40, 0.6);
+    backdrop-filter: blur(2px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 2rem;
+}
+
+.testimonial-modal {
+    position: relative;
+    background: #fff;
+    border-radius: 12px;
+    max-width: 600px;
+    width: 100%;
+    padding: 3rem;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+}
+
+.testimonial-modal-close {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    border: none;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    font-size: 22px;
+    line-height: 1;
+    color: #1a1a2e;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1001;
+}
+
+.testimonial-modal-close:hover {
+    background: #f0f0f5;
+}
+
+.testimonial-modal-quote {
+    font-style: italic;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #333;
+    margin: 0 0 2rem;
+}
+
+@media (max-width: 900px) {
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+}

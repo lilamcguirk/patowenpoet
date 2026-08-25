@@ -1,0 +1,60 @@
+.readings-hero {
+    background: #1b2143;
+    padding: 5rem 80px;
+    font-family: 'Inter', Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .readings-hero-inner {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .readings-hero-heading {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.15;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 0 0 20px;
+  }
+  
+  .readings-hero-subtext {
+    font-size: 16px;
+    color: white;
+    margin: 0 auto 32px;
+    font-weight: 400;
+    max-width: 700px;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .readings-hero-button {
+    display: inline-flex;
+    transition: background 0.2s ease, color 0.2s ease;
+    align-items: center;
+    gap: 6px;
+    border: 1px solid #fff;
+    background: #ffffff;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 16px 32px;
+    border-radius: 999px;
+  }
+  
+  .readings-hero-button:hover {
+    background: transparent;
+    color: white;
+  }
+  
+  @media (max-width: 900px) {
+    .readings-hero {
+      padding: 3.5rem 1.5rem;
+    }
+    .readings-hero-heading {
+      font-size: 32px;
+    }
+  }
