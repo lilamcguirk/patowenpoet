@@ -5,7 +5,7 @@ export default function Testimonials() {
   const testimonials = [
     {
       excerpt:
-        'TEST Pat Owen\'s new collection of poems are gems collected from a life spent strolling through the early dark. Her poetry is the practice...',
+        'Pat Owen\'s new collection of poems are gems collected from a life spent strolling through the early dark. Her poetry is the practice...',
       full:
         'Pat Owen\'s new collection of poems are gems collected from a life spent strolling through the early dark. Her poetry is the practice of interrogating reality in order to understand one\'s place in the world. It is the art of paying attention to the world, to others, and to self in order to understand how we relate one to the other. These poems are born from a curious mind and a compassionate heart. Good poems help the reader see the worls with fresh eyes. These poems both light up the world around us and ask us, then, to pay close and careful attention.',
       name: 'Jeremy Paden',
