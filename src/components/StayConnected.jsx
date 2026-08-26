@@ -1,34 +1,26 @@
-import { useState } from 'react';
+import { useEffect } from 'react';
 import './StayConnected.css';
 
 export default function StayConnected() {
-  const [email, setEmail] = useState('');
-  const [error, setError] = useState('');
-  const [success, setSuccess] = useState(false);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    const trimmed = email.trim();
-
-    if (!trimmed) {
-      setError('Please enter your email address.');
-      setSuccess(false);
+  useEffect(() => {
+    if (window.ml) {
+      window.ml('account', '2598385');
       return;
     }
 
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailPattern.test(trimmed)) {
-      setError('Please enter a valid email address.');
-      setSuccess(false);
-      return;
-    }
+    (function (w, d, e, u, f, l, n) {
+      w[f] = w[f] || function () {
+        (w[f].q = w[f].q || []).push(arguments);
+      };
+      l = d.createElement(e);
+      l.async = 1;
+      l.src = u;
+      n = d.getElementsByTagName(e)[0];
+      n.parentNode.insertBefore(l, n);
+    })(window, document, 'script', 'https://assets.mailerlite.com/js/universal.js', 'ml');
 
-    // No backend hooked up yet — just confirming in the UI for now
-    setError('');
-    setSuccess(true);
-    setEmail('');
-  };
+    window.ml('account', '2598385');
+  }, []);
 
   return (
     <section className="stay-connected">
@@ -41,41 +33,7 @@ export default function StayConnected() {
             literary events.
           </p>
 
-          <form
-            className="stay-connected-form"
-            onSubmit={handleSubmit}
-            noValidate
-          >
-            <div className="stay-connected-input-wrap">
-              <input
-                type="email"
-                className={`stay-connected-input ${error ? 'has-error' : ''}`}
-                placeholder="Enter your email address here"
-                value={email}
-                onChange={(e) => {
-                  setEmail(e.target.value);
-                  if (error) setError('');
-                }}
-                aria-invalid={!!error}
-                aria-describedby={error ? 'stay-connected-error' : undefined}
-              />
-              <button type="submit" className="stay-connected-button">
-                Join the Mailing List
-              </button>
-            </div>
-
-            {error && (
-              <p id="stay-connected-error" className="stay-connected-error">
-                {error}
-              </p>
-            )}
-
-            {success && (
-              <p className="stay-connected-success">
-                Thanks for subscribing!
-              </p>
-            )}
-          </form>
+          <div className="ml-embedded" data-form="ys5lfq"></div>
         </div>
       </div>
     </section>

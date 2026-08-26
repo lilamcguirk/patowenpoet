@@ -39,7 +39,7 @@ export default function Header() {
           ))}
         </ul>
 
-        <a className="contact-btn" href="/contact">
+        <a className="contact-btn" href="mailto:patowen3@yahoo.com">
           Contact
         </a>
 
@@ -71,7 +71,7 @@ export default function Header() {
 
         <a
           className="mobile-contact-btn"
-          href="/contact"
+          href="mailto:patowen3@yahoo.com"
           onClick={() => setMenuOpen(false)}
         >
           Contact

@@ -22,82 +22,22 @@
   .stay-connected-row {
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
-    gap: 3rem;
+    justify-content: center;
+    gap: 5rem;
     flex-wrap: wrap;
   }
   
   .stay-connected-subtext {
-    font-size: 19px;
-    color: black;
-    font-weight: 400;
-    font-family: "Inter", sans-serif;
-    max-width: 480px;
-    line-height: 1.5;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #12225c;
+    max-width: 360px;
+    line-height: 1.6;
     margin: 0;
+    padding-top: 22px;
     flex: 1 1 320px;
-  }
-  
-  .stay-connected-form {
-    flex: 1 1 480px;
-    max-width: 620px;
-  }
-  
-  .stay-connected-input-wrap {
-    display: flex;
-    align-items: stretch;
-    border-radius: 999px;
-    overflow: hidden;
-    border: 1px solid #e2e2e2;
-    background: #f7f7f8;
-  }
-  
-  .stay-connected-input {
-    flex: 1;
-    border: none;
-    background: transparent;
-    padding: 18px 24px;
-    font-size: 16px;
-    font-family: 'Inter', Arial, sans-serif;
-    color: #1b1b1b;
-    outline: none;
-  }
-  
-  .stay-connected-input::placeholder {
-    color: #8a8a8a;
-  }
-  
-  .stay-connected-input.has-error {
-    box-shadow: inset 0 0 0 2px #d92d20;
-  }
-  
-  .stay-connected-button {
-    border: none;
-    background: #12225c;
-    color: #ffffff;
-    font-family: 'Inter', Arial, sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    padding: 0 32px;
-    cursor: pointer;
-    white-space: nowrap;
-    transition: background 0.2s ease;
-  }
-  
-  .stay-connected-button:hover {
-    background: #1b3080;
-  }
-  
-  .stay-connected-error {
-    color: #d92d20;
-    font-size: 14px;
-    margin: 10px 4px 0;
-  }
-  
-  .stay-connected-success {
-    color: #16794f;
-    font-size: 14px;
-    margin: 10px 4px 0;
   }
   
   @media (max-width: 900px) {
@@ -106,39 +46,17 @@
     }
     .stay-connected-heading {
       font-size: 32px;
-      margin: 0 0 1rem;
+      margin: 0 0 1.5rem;
     }
     .stay-connected-row {
       flex-direction: column;
       align-items: center;
-      justify-content: flex-start;
-      flex-wrap: nowrap;
       gap: 1.5rem;
       text-align: center;
     }
     .stay-connected-subtext {
       max-width: 400px;
       flex: none;
-    }
-    .stay-connected-form {
-      max-width: none;
-      width: 100%;
-      flex: none;
-    }
-    .stay-connected-input-wrap {
-      flex-direction: column;
-      border-radius: 16px;
-    }
-    .stay-connected-input {
-      padding: 16px 20px;
-      text-align: center;
-    }
-    .stay-connected-button {
-      padding: 16px;
-      width: 100%;
-    }
-    .stay-connected-error,
-    .stay-connected-success {
-      text-align: center;
+      padding-top: 0;
     }
   }
