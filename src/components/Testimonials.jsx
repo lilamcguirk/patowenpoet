@@ -7,7 +7,7 @@ export default function Testimonials() {
       excerpt:
         'Pat Owen\'s new collection of poems are gems collected from a life spent strolling through the early dark. Her poetry is the practice...',
       full:
-        'Pat Owen\'s new collection of poems are gems collected from a life spent strolling through the early dark. Her poetry is the practice of interrogating reality in order to understand one\'s place in the world. It is the art of paying attention to the world, to others, and to self in order to understand how we relate one to the other. These poems are born from a curious mind and a compassionate heart. Good poems help the reader see the worls with fresh eyes. These poems both light up the world around us and ask us, then, to pay close and careful attention.',
+        'Pat Owen\'s new collection of poems are gems collected from a life spent strolling through the early dark. Her poetry is the practice of interrogating reality in order to understand one\'s place in the world. It is the art of paying attention to the world, to others, and to self in order to understand how we relate one to the other. These poems are born from a curious mind and a compassionate heart. Good poems help the reader see the world with fresh eyes. These poems both light up the world around us and ask us, then, to pay close and careful attention.',
       name: 'Jeremy Paden',
       role: '',
     },
@@ -23,7 +23,7 @@ export default function Testimonials() {
       excerpt:
         'Bardo of Becoming is full of tender, questioning memories of a beloved father, a departed dog, a cherished partner——all of them gone now...',
       full:
-        'Bardo of Becoming is full of tender, questioning memories of a beloved father, a departed dog, a cherished partner——all of them gone now, leaving the writer with the small sensual details that make up a life; taste of cheese and crackers dissolving in the mouth, delicate scent of amaryllis, an ancient address book stuffed with post-it notes, all evidence of a life vibrantly lived, and living still in present time. In Owen\'s world the dead and the living rub shoulders, and the bardo of becoming is fresh as spring grass under a young girl\'s fingers, and always heppening now.',
+        'Bardo of Becoming is full of tender, questioning memories of a beloved father, a departed dog, a cherished partner——all of them gone now, leaving the writer with the small sensual details that make up a life; taste of cheese and crackers dissolving in the mouth, delicate scent of amaryllis, an ancient address book stuffed with post-it notes, all evidence of a life vibrantly lived, and living still in present time. In Owen\'s world the dead and the living rub shoulders, and the bardo of becoming is fresh as spring grass under a young girl\'s fingers, and always happening now.',
       name: 'Alison Luterman',
       role: '',
     },
@@ -37,9 +37,9 @@ export default function Testimonials() {
     },
     {
       excerpt:
-        'These poignant and deeply reflective poems capture the essence of life\'s pivotal monents——from tender memories of family and childhood to profound...',
+        'These poignant and deeply reflective poems capture the essence of life\'s pivotal moments——from tender memories of family and childhood to profound...',
       full:
-        'These poignant and deeply reflective poems capture the essence of life\'s pivotal monents——from tender memories of family and childhood to profound reflections on grief. \'1974 Sanibel Island\' chronicles the pain and wonder of choosing your true path, even at the risk of alienating——perhaps even harming––those you love. It beautifully captures a moment in time, blending nostalgia with the tension of impending change. Sadly, it\'s followed by a series of poems that chronicle the heart-breaking illness and loss of her beloved. Typical of Owen\'s poetry, this pain is telegraphed through small moments brilliantly observed.',
+        'These poignant and deeply reflective poems capture the essence of life\'s pivotal moments——from tender memories of family and childhood to profound reflections on grief. \'1974 Sanibel Island\' chronicles the pain and wonder of choosing your true path, even at the risk of alienating——perhaps even harming––those you love. It beautifully captures a moment in time, blending nostalgia with the tension of impending change. Sadly, it\'s followed by a series of poems that chronicle the heart-breaking illness and loss of her beloved. Typical of Owen\'s poetry, this pain is telegraphed through small moments brilliantly observed.',
       name: 'Patricia Averbach',
       role: '',
     },

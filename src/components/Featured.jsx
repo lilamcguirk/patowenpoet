@@ -37,7 +37,7 @@ export default function Featured() {
 
   const bookstores = [
     { name: "Carmichael's Bookstore", location: 'Louisville, KY', link: "https://carmichaelsbookstore.com/book/9781945049590?ic_referral=xk2rNnCOl8bgUh4XRgrhRr6iTiNhbd1Q2xhzBdTdlEQwM0Ybb4gaHRCe7v5pQkYHgDgXH8JA-LUvDJhSVbtlP13dv8YgtTbrsfwXXn7j1kPdyPM4iuHu0B0WFXm3lc0XBiJEOQ"},
-    { name: 'Bookstore1', location: 'Sarasota, FL', link: "https://shop.sarasotabooks.com/author/pat-williams-owen" },
+    { name: 'Bookstore1', location: 'Sarasota, FL', link: "https://shop.sarasotabooks.com/product/crossroad-poems" },
     { name: 'Chautauqua Institution Bookstore', location: 'Chautauqua, NY', link: "https://chautauquabookstore.com/book/9781936628919" },
   ];
 

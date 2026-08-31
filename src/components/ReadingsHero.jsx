@@ -13,7 +13,7 @@ export default function ReadingsHero() {
           discussions.
         </p>
 
-        <a href="#contact" className="readings-hero-button">
+        <a href="mailto:patowen3@yahoo.com" className="readings-hero-button">
           Contact for Readings <span aria-hidden="true">&gt;</span>
         </a>
       </div>
