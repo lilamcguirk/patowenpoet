@@ -1,1 +1,3 @@
-patowenpoet.com
+patowenpoet.comgit add .
+git commit -m "add CNAME file"
+git push
