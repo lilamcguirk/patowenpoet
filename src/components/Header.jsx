@@ -6,7 +6,7 @@ const NAV_LINKS = [
   { label: 'About', href: '#about' },
   { label: 'Books', href: '#books' },
   { label: 'Media', href: '#media' },
-  { label: 'Readings & Discussions', href: '#readings' },
+  { label: 'Journals & Anthologies', href: '#readings' },
 ];
 
 export default function Header() {
@@ -87,7 +87,7 @@ export default function Header() {
         <div className="blockquote-low">Pat Owen</div>
 
         <p className="hero-desc">
-          Published poet Pat Williams Owen is the author of four poetry
+          Pat Williams Owen is the author of four poetry
           collections. Her work focuses on memory, family, grief, love and
           everyday life. She transitioned from a career in legal publishing
           to writing poetry.

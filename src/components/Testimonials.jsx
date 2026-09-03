@@ -13,25 +13,25 @@ export default function Testimonials() {
     },
     {
       excerpt:
-        'Pat Owen is that rare poet who witnesses the divine in actually-lived lives——in wrinkles and café, otters and baseball, vulvas and ferns. Here is a music as attentive...',
+        'Pat Owen is that rare poet who witnesses the divine in actually-lived lives——in wrinkles and cafés, otters and baseball, vulvas and ferns. Here is a music as attentive...',
       full:
-        'Pat Owen is that rare poet who witnesses the divine in actually-lived lives——in wrinkles and café, otters and baseball, vulvas and ferns. Here is a music as attentive and tender as the practitioner\'s Zazen-breath, and like the Zazen master, here is a tenderness that is hard, sharp, quick. Set in the dangerous ecosystem of suburbia, that anesthetizing place, Orion\'s Belt at the End of the Drive offers the reader a striking wake-up alarm for the heart.',
+        'Pat Owen is that rare poet who witnesses the divine in actually-lived lives——in wrinkles and cafés, otters and baseball, vulvas and ferns. Here is a music as attentive and tender as the practitioner\'s Zazen-breath, and like the Zazen master, here is a tenderness that is hard, sharp, quick. Set in the dangerous ecosystem of suburbia, that anesthetizing place, <b>Orion\'s Belt at the End of the Drive</b> offers the reader a striking wake-up alarm for the heart.',
       name: 'Rebecca Gayle Howell',
       role: '',
     },
     {
       excerpt:
-        'Bardo of Becoming is full of tender, questioning memories of a beloved father, a departed dog, a cherished partner——all of them gone now...',
+        '<b>Bardo of Becoming</b> is full of tender, questioning memories of a beloved father, a departed dog, a cherished partner——all of them gone now...',
       full:
-        'Bardo of Becoming is full of tender, questioning memories of a beloved father, a departed dog, a cherished partner——all of them gone now, leaving the writer with the small sensual details that make up a life; taste of cheese and crackers dissolving in the mouth, delicate scent of amaryllis, an ancient address book stuffed with post-it notes, all evidence of a life vibrantly lived, and living still in present time. In Owen\'s world the dead and the living rub shoulders, and the bardo of becoming is fresh as spring grass under a young girl\'s fingers, and always happening now.',
+        '<b>Bardo of Becoming</b> is full of tender, questioning memories of a beloved father, a departed dog, a cherished partner——all of them gone now, leaving the writer with the small sensual details that make up a life; taste of cheese and crackers dissolving in the mouth, delicate scent of amaryllis, an ancient address book stuffed with post-it notes, all evidence of a life vibrantly lived, and living still in present time. In Owen\'s world the dead and the living rub shoulders, and the <b>bardo of becoming</b> is fresh as spring grass under a young girl\'s fingers, and always happening now.',
       name: 'Alison Luterman',
       role: '',
     },
     {
       excerpt:
-        'The poems in Pat Owen\'s new collection of memorable poems Bardo of Becoming reveal a speaker who\'s spent a lifetime paying attention and working...',
+        'The poems in Pat Owen\'s new collection of memorable poems <b>Bardo of Becoming</b> reveal a speaker who\'s spent a lifetime paying attention and working...',
       full:
-        'The poems in Pat Owen\'s new collection of memorable poems Bardo of Becoming reveal a speaker who\'s spent a lifetime paying attention and working to understand the meanings of her own story. How difficult it is to tell the truth about self, yet I find in these poems a staggering honesty. Upon reflection, the woman speaking in these beautifully image-rich poems is an early feminist. As an elder, she is fiercly independent and fiercly attached to the present, to the natural world, the plants, and fittingly, the birds, of her environment, and to the people and words and ideas she\'s loved and loves, fleeting, she knows, but of inestimable value. I hope these poems reach many.',
+        'The poems in Pat Owen\'s new collection of memorable poems <b>Bardo of Becoming</b> reveal a speaker who\'s spent a lifetime paying attention and working to understand the meanings of her own story. How difficult it is to tell the truth about self, yet I find in these poems a staggering honesty. Upon reflection, the woman speaking in these beautifully image-rich poems is an early feminist. As an elder, she is fiercly independent and fiercly attached to the present, to the natural world, the plants, and fittingly, the birds, of her environment, and to the people and words and ideas she\'s loved and loves, fleeting, she knows, but of inestimable value. I hope these poems reach many.',
       name: 'Maureen Morehead',
       role: '',
     },
@@ -45,9 +45,9 @@ export default function Testimonials() {
     },
     {
       excerpt:
-        'I want to know it really happened (\'Old Calendars\'),\' writes Pat Williams Owen in her newest collection, The Crossroad, and I hear in the speaker\'s...',
+        'I want to know it really happened (\'Old Calendars\'),\' writes Pat Williams Owen in her newest collection, <b>The Crossroad</b>, and I hear in the speaker\'s...',
       full:
-        'I want to know it really happened (\'Old Calendars\'),\' writes Pat Williams Owen in her newest collection, The Crossroad, and I hear in the speaker\'s words a mantra for the way Owen makes her poems. With a documentarian\'s keen eye and a sojourner\'s profound attunement to wonder, this poet asks us to look closer at the natural world——\'the root dangling with mud / and the blossom glinting / with dew\' (\'The Gist of the Gist\')——and even closer at the human heart.',
+        'I want to know it really happened (\'Old Calendars\'),\' writes Pat Williams Owen in her newest collection, <b>The Crossroad</b>, and I hear in the speaker\'s words a mantra for the way Owen makes her poems. With a documentarian\'s keen eye and a sojourner\'s profound attunement to wonder, this poet asks us to look closer at the natural world——\'the root dangling with mud / and the blossom glinting / with dew\' (\'The Gist of the Gist\')——and even closer at the human heart.',
       name: 'Julie Marie Wade',
       role: '',
     },
@@ -87,7 +87,9 @@ export default function Testimonials() {
       <div className="testimonials-grid">
         {testimonials.map((t, i) => (
           <div className="testimonial-card" key={i}>
-            <p className="testimonial-quote">{t.excerpt}</p>
+            <p className="testimonial-quote"
+            dangerouslySetInnerHTML={{ __html: t.excerpt }}
+            />
 
             <button
               className="testimonial-readmore"
@@ -121,9 +123,10 @@ export default function Testimonials() {
               &times;
             </button>
 
-            <p className="testimonial-modal-quote">
-              {testimonials[activeIndex].full}
-            </p>
+            <p
+                className="testimonial-modal-quote"
+                dangerouslySetInnerHTML={{ __html: testimonials[activeIndex].full }}
+                />
 
             <div className="testimonial-attribution">
               <p className="testimonial-name">

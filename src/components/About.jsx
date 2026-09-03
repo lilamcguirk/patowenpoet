@@ -13,7 +13,7 @@ export default function About() {
       <div className="about-content">
         <p className="about-eyebrow">About Pat Williams Owen</p>
         <h2 className="about-heading">
-          The Person<br />Behind the Words.
+          Back Story.
         </h2>
 
         <p className="about-text">

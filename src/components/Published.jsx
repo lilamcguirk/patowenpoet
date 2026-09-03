@@ -23,7 +23,7 @@ const journalPubs = [
 ];
 
 const anthologyPubs = [
-  { poem: 'Inside a Fragile Body', anthology: '& Grace', year: 2015, link: null },
+  { poem: 'Inside a Fragile Body', anthology: '& Grace', year: 2015, link: 'https://lexpomo.com/poem/inside-a-fragile-body/' },
   { poem: 'Boring', anthology: 'The Messenger is Sudden Thunder', year: 2016, link: 'https://lexpomo.com/poem/boring/' },
   { poem: 'After the Funeral', anthology: 'The Heavy Lifting', year: 2017, link: 'https://lexpomo.com/poem/after-the-funeral/' },
   { poem: 'The Tin Man', anthology: "Let's Do It Live", year: 2018, link: 'https://lexpomo.com/poem/the-tin-man/' },

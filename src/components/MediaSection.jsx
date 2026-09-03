@@ -12,6 +12,12 @@ const videos = [
     description:
       'A conversation on craft, memory, and the poems that grew out of them.',
   },
+  {
+    title: 'Reading & Conversation',
+    youtubeId: '0DGrjJ1i2TY',
+    description:
+      'A journey through old journals and photographs, revisiting memories of youth, family, and loss.',
+  }
 ];
 
 const audio = {

@@ -5,7 +5,7 @@ const navLinks = [
     { label: 'About', href: '#about' },
     { label: 'Books', href: '#books' },
     { label: 'Media', href: '#media' },
-    { label: 'Readings & Discussions', href: '#readings' },
+    { label: 'Journals & Anthologies', href: '#readings' },
 ];
 
 function MailIcon() {

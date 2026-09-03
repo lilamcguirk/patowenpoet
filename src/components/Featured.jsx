@@ -9,7 +9,7 @@ export default function Featured() {
       description:
         'Her 2016 debut collection from Larkspur Press chronicles grief, and the consolations of nature and family.',
       note: 'Very limited supply available from Larkspur Press',
-      link: 'tel:5551234567',
+      link: 'tel:5024845390',
       linkText: 'Call Now',
     },
     {
@@ -30,7 +30,7 @@ export default function Featured() {
       title: 'The Crossroad',
       image: './images/book-4.jpg',
       description:
-        'The 2025 publication from Shadelandhouse Modern Press concerns itself with pivotal moments in a life.',
+        'The 2025 publication from Shadelandhouse Modern Press contains poems that deal with life\'s pivotal moments.',
       link: 'https://smpbooks.com/product/the-crossroad/?srsltid=AfmBOooUreKa5YnDtoQbAMD6Ym5EOEB6xbA78BVgpXMeQlkYrYQZ2kEq',
     },
   ];
