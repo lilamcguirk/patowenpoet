@@ -39,7 +39,7 @@ export default function Featured() {
     { name: "Carmichael's Bookstore", location: 'Louisville, KY', link: "https://carmichaelsbookstore.com/book/9781945049590?ic_referral=xk2rNnCOl8bgUh4XRgrhRr6iTiNhbd1Q2xhzBdTdlEQwM0Ybb4gaHRCe7v5pQkYHgDgXH8JA-LUvDJhSVbtlP13dv8YgtTbrsfwXXn7j1kPdyPM4iuHu0B0WFXm3lc0XBiJEOQ"},
     { name: 'Bookstore1', location: 'Sarasota, FL', link: "https://shop.sarasotabooks.com/product/crossroad-poems" },
     { name: 'Chautauqua Institution Bookstore', location: 'Chautauqua, NY', link: "https://chautauquabookstore.com/book/9781936628919" },
-    { name: 'Bookshop.org', location: null, link: "https://chautauquabookstore.com/book/9781936628919"},
+    { name: 'Bookshop.org', location: null, link: "https://bookshop.org/p/books/the-crossroad-poems-pat-williams-owen/83d51a3c56904ce2?ean=9781945049590&bkshp-astro=t"},
   ];
 
   return (
